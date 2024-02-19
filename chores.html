@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="style.css">
+  <title>Flashcards</title>
+</head>
+<body>
+
+  <main>
+    
+    <header>
+      <div class="container">
+        <div id="header">
+          <h1>Flashcards</h1>
+          <div>
+            <button id="show_chore_box">Add Card</button>
+            <button id="delete_chores">Del Cards</button>
+          </div>
+        </div>
+      </div>
+    </header>
+    
+    <section>
+      <div class="container">
+        <div id="create_chore">
+          <h2>Create Flashcard</h2>
+          <label for="choreTitle">Chore: </label>
+          <textarea id="choreTitleInput" maxlength="280"></textarea>
+          <label for="frequency" maxlength="280">Needed Frequency (days):</label>
+          <br>
+          <textarea id="frequencyInput"></textarea>
+          <div>
+            <button id="save_chore">Save</button> <button id="close_chore_box">Close</button>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section>
+      <div class="container">
+        <div id="chores"></div>
+      </div>
+    </section>
+
+  </main>
+  
+  <script src="chores.js"></script>
+</body>
+</html>
